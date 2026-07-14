@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boris Dimitrov | Trivia</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Boris Dimitrov's Website</h1>
+    <p>First-Year ISSE Student</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="page-layout">
+
+    <aside class="left-sidebar">
+      <h2>Useful Links</h2>
+
+      <ul>
+        <li>
+          <a href="https://www.ritsumei.ac.jp/" target="_blank">
+            Ritsumeikan University
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            HTML Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/css/" target="_blank">
+            CSS Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/js/" target="_blank">
+            JavaScript Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Technology Trivia Quiz</h2>
+
+      <p>
+        Answer the three questions and press the button
+        to calculate your score.
+      </p>
+
+      <div class="quiz-question">
+        <p><b>1. What does CPU stand for?</b></p>
+
+        <select id="question1">
+          <option value="">Choose an answer</option>
+          <option value="wrong">Computer Personal Unit</option>
+          <option value="correct">Central Processing Unit</option>
+          <option value="wrong">Central Program Utility</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <p><b>2. Which language is used to structure a webpage?</b></p>
+
+        <select id="question2">
+          <option value="">Choose an answer</option>
+          <option value="correct">HTML</option>
+          <option value="wrong">Python</option>
+          <option value="wrong">SQL</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <p><b>3. Which memory is normally volatile?</b></p>
+
+        <select id="question3">
+          <option value="">Choose an answer</option>
+          <option value="wrong">SSD</option>
+          <option value="wrong">ROM</option>
+          <option value="correct">RAM</option>
+        </select>
+      </div>
+
+      <button onclick="checkQuiz()">Check My Score</button>
+
+      <p id="quizResult"></p>
+    </main>
+
+    <aside class="right-sidebar">
+      <h2>Contact Me</h2>
+
+      <form onsubmit="return validateForm()">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+
+        <p id="formResult"></p>
+      </form>
+
+      <p class="email-text">
+        Email:
+        <a href="mailto:bobionekenobi2006@gmail.com">
+          bobionekenobi2006@gmail.com
+        </a>
+      </p>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>Created in July 2026</p>
+
+    <p>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

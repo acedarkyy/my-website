@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  background-color: #f1f4f3;
+  color: #243333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 30px;
+  background-color: #294c4c;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+nav {
+  padding: 14px;
+  background-color: #c45b48;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff2b8;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 250px;
+  max-width: 1200px;
+  min-height: 650px;
+  margin: 25px auto;
+  gap: 20px;
+}
+
+.left-sidebar,
+.right-sidebar,
+main {
+  padding: 22px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.left-sidebar {
+  background-color: #dde9e5;
+}
+
+.right-sidebar {
+  background-color: #f1e4df;
+}
+
+h2 {
+  color: #9d3e30;
+}
+
+.left-sidebar ul {
+  padding-left: 20px;
+}
+
+.left-sidebar li {
+  margin-bottom: 12px;
+}
+
+a {
+  color: #9d3e30;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 9px;
+  margin-top: 5px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c45b48;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #953f31;
+}
+
+#formResult,
+#quizResult {
+  color: #9d3e30;
+  font-weight: bold;
+}
+
+.email-text {
+  margin-top: 25px;
+  word-break: break-word;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 12px;
+  border: 1px solid #aaaaaa;
+  text-align: left;
+}
+
+.portfolio-table th {
+  background-color: #294c4c;
+  color: white;
+}
+
+.portfolio-table tr:nth-child(even) {
+  background-color: #edf3f1;
+}
+
+.quiz-question {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-left: 5px solid #c45b48;
+  background-color: #f4f7f6;
+}
+
+footer {
+  padding: 20px;
+  background-color: #294c4c;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer a {
+  color: #fff2b8;
+}
+
+@media screen and (max-width: 850px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}

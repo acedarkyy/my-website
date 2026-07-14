@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boris Dimitrov | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Boris Dimitrov's Website</h1>
+    <p>First-Year ISSE Student</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="page-layout">
+
+    <aside class="left-sidebar">
+      <h2>Useful Links</h2>
+
+      <ul>
+        <li>
+          <a href="https://www.ritsumei.ac.jp/" target="_blank">
+            Ritsumeikan University
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            HTML Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/css/" target="_blank">
+            CSS Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/js/" target="_blank">
+            JavaScript Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>My Portfolio</h2>
+
+      <p>
+        This table shows some of the projects and assignments
+        I completed during my first semester.
+      </p>
+
+      <div class="table-container">
+
+        <table class="portfolio-table">
+
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Date</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Personal Website</td>
+            <td>
+              A three-page website created using HTML, CSS and JavaScript.
+            </td>
+            <td>July 2026</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Virtual Machine Setup</td>
+            <td>
+              Installed and used another operating system inside a virtual machine.
+            </td>
+            <td>May 2026</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Python Class Program</td>
+            <td>
+              Created Python classes using attributes, methods and inheritance.
+            </td>
+            <td>June 2026</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Spreadsheet Analysis</td>
+            <td>
+              Used formulas, charts and statistics to analyse experimental data.
+            </td>
+            <td>June 2026</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Network Investigation</td>
+            <td>
+              Used network commands to examine an IP address, gateway and connection.
+            </td>
+            <td>June 2026</td>
+          </tr>
+
+        </table>
+
+      </div>
+    </main>
+
+    <aside class="right-sidebar">
+      <h2>Contact Me</h2>
+
+      <form onsubmit="return validateForm()">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+
+        <p id="formResult"></p>
+      </form>
+
+      <p class="email-text">
+        Email:
+        <a href="mailto:bobionekenobi2006@gmail.com">
+          bobionekenobi2006@gmail.com
+        </a>
+      </p>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>Created in July 2026</p>
+
+    <p>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boris Dimitrov | Home</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Boris Dimitrov's Website</h1>
+    <p>First-Year ISSE Student</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="page-layout">
+
+    <aside class="left-sidebar">
+      <h2>Useful Links</h2>
+
+      <ul>
+        <li>
+          <a href="https://www.ritsumei.ac.jp/" target="_blank">
+            Ritsumeikan University
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            HTML Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/css/" target="_blank">
+            CSS Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/js/" target="_blank">
+            JavaScript Tutorial
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>About Me</h2>
+
+      <img
+        class="main-image"
+        src="https://placehold.co/700x400/dde9e5/243a3a?text=Technology+and+Learning"
+        alt="Technology and learning"
+      >
+
+      <p>
+        Hello, my name is Boris Dimitrov. I am a first-year
+        Information Systems Science and Engineering student at
+        Ritsumeikan University.
+      </p>
+
+      <p>
+        I am interested in programming, computer systems, web development
+        and new technology. During my first semester, I have studied Python,
+        HTML, CSS, databases, operating systems and computer hardware.
+      </p>
+
+      <p>
+        One of my goals at Ritsumeikan University is to improve my technical
+        skills and use them to create useful projects. I also want to learn
+        more about software engineering, networks and cybersecurity.
+      </p>
+
+      <h2>My Hobbies</h2>
+
+      <ul>
+        <li>Cars and automotive technology</li>
+        <li>PC building and gaming</li>
+        <li>Calisthenics and gym training</li>
+        <li>Football</li>
+        <li>Travelling</li>
+      </ul>
+    </main>
+
+    <aside class="right-sidebar">
+      <h2>Contact Me</h2>
+
+      <form onsubmit="return validateForm()">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="contactMessage" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+
+        <p id="formResult"></p>
+      </form>
+
+      <p class="email-text">
+        Email:
+        <a href="mailto:bobionekenobi2006@gmail.com">
+          bobionekenobi2006@gmail.com
+        </a>
+      </p>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>Created in July 2026</p>
+
+    <p>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
